@@ -1,0 +1,296 @@
+* { 
+	box-sizing: border-box;
+    padding:unset;
+    margin:unset;
+}
+
+:root {
+    --background:#0d1117;
+    --font-primary:#e2e8f0;
+    --secondary-dark: #161b22;
+    --light-stroke: #373f4e;
+}
+@font-face {
+    font-family: 'InterDisplay';
+    font-style:  normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./assets/InterDisplay-Regular.woff") format("woff")
+}
+
+@font-face {
+    font-family: 'InterDisplay';
+    font-style:  normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("./assets/InterDisplay-Medium.woff") format("woff")
+}
+
+@font-face {
+    font-family: 'InterDisplay';
+    font-style:  normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("./assets/InterDisplay-SemiBold.woff format")("woff")
+}
+
+@font-face {
+    font-family: 'InterDisplay';
+    font-style:  normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("./assets/InterDisplay-Bold.woff")("woff")
+}
+
+@font-face {
+    font-family: NDot55;
+    src: url(./assets/fonts-ndot55.otf);
+}
+
+html, body {
+	min-height: 100%;
+    color: #e2e8f0;
+    background-color: var(--background) ;
+}
+
+body {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    font-size: 1rem;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body, ul, ol, dl {
+	margin: 0;
+}
+
+img { 
+	border: none;
+	max-width: 100%;
+}
+
+a {
+    all: unset;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    transition: text-decoration-color 300ms;
+    color: #b1bdd4;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration-color: #b1bdd4;
+}
+
+a::after {
+    all: unset;
+}
+
+
+main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    padding: 2em 2.5em;
+    border-bottom: 1px solid var(--light-stroke);
+    background-color:#0d1117d2;
+    backdrop-filter: blur(33px);
+    background-blend-mode: overlay;
+    z-index: 100;
+}
+
+#menu-container {
+    display: flex;
+    flex-direction: row;
+}
+.logo {
+    display: inline-block;
+    align-items: center;
+    border: 100px;
+    font-family: NDot55;
+    font-size: 2rem;
+}
+
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 2.5em;
+}
+
+.intro-section > h1 {
+    font-family: 'InterDisplay', 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;;
+    max-width: 23ch;
+    font-size: 5rem;
+    line-height: 1.0;
+    font-weight: 600;
+}
+
+.largebody {
+    font-family: 'InterDisplay', 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    max-width: 55ch;
+    font-size: 1.25rem;
+    line-height: 1.25;
+}
+
+label {
+    font-family: Ndot55;
+    font-size: 1.5rem;
+}
+
+button {
+    all:unset;
+    visibility: hidden;
+    font-size: 1.5rem;
+    font-family: 'InterDisplay', 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0rem;
+    position: absolute;
+    display: inline-block;
+    padding: 1em 2em;
+    border-radius: 100px;
+    top: 1rem;
+    color: var(--font-primary);
+    background-color: var(--secondary-dark);
+    transition: box-shadow .2s, background-color .2s;
+}
+
+button:hover {
+    background-color: #252c35;
+    box-shadow: 0 0 0 .1em var(--light-stroke)
+}
+
+#hero {
+    all:unset;
+    font-size: 1.5rem;
+    font-family: 'InterDisplay', 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0rem;
+    position: relative;
+    display: inline-block;
+    padding: 1em 1.3em;
+    bottom: 1rem;
+    border-radius: 100px;
+    color: var(--font-primary);
+    background-color: var(--secondary-dark);
+    transition: box-shadow .2s, background-color .2s;
+}
+
+#hero:hover {
+    background-color: #252c35;
+    box-shadow: 0 0 0 .1em var(--light-stroke)
+}
+
+#cta-scroll {
+    position: absolute;
+    gap: 1rem;
+    align-items: center;
+    display: flex;
+    right: 2.5em;
+    bottom: 2.5em;
+    padding: 1em;
+    opacity: 90%;
+    background-color: var(--secondary-dark);
+    font-family: NDOT55;
+}
+
+
+.content-container {
+    display: flex;
+    padding: 10rem 2.5rem 50rem;
+    font-family:'InterDisplay', 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    font-size: 2em;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 10rem 2.5rem 2.5rem;
+    border-top: 1px solid var(--light-stroke);
+}
+
+footer > h1 {
+    font-family: 'InterDisplay', 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.1em;
+    padding-bottom: 1em;
+}
+
+footer p {
+    font-family: NDOT55;
+    font-size: .8rem;
+}
+
+
+
+@media screen and (max-width: 740px) {
+    .intro-section > h1 {
+        font-size: 10.5vw;
+        line-height: 1.1em;
+
+    }
+
+    .intro-section {
+        gap: 2rem;
+        padding: 2em;
+    }
+
+    #hero {
+      display:none;
+        
+    }
+
+   #hero-mobile {
+    all:unset;
+    font-size: 1.5rem;
+    font-family: 'InterDisplay', 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0rem;
+    position: relative;
+    display: inline-block;
+    padding: 1em 2em;
+    border-radius: 100px;
+    bottom:.5rem;
+    width: 10vw;
+    color: var(--font-primary);
+    background-color: var(--secondary-dark);
+    transition: box-shadow .2s, background-color .2s;
+   }
+
+   #hero-mobile:hover {
+    background-color: #252c35;
+    box-shadow: 0 0 0 .1em var(--light-stroke)
+}
+
+    label {
+        font-size: 1.25rem;
+    }
+
+    nav {
+        padding: 1em 2.5em;
+    }
+
+    }
