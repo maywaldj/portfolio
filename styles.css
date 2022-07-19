@@ -235,6 +235,14 @@ footer p {
     }
 
     #cta-scroll {
+        all:unset;
+        position: absolute;
+        gap: 1rem;
+        align-items: center;
+        display: flex;
+        opacity: 90%;
+        background-color: var(--secondary-dark);
+        font-family: NDOT55;
         right: 1em;
         bottom: 4em;
         background-color: transparent;
