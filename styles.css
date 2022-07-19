@@ -148,6 +148,7 @@ nav {
 .largebody {
     font-family: 'InterDisplay-Medium', Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
     max-width: 50ch;
+    font-weight: 500;
     font-size: 1.25rem;
     line-height: 1.25;
 }
@@ -197,7 +198,7 @@ footer > h1 {
     font-family: 'InterDisplay-Medium', Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
     font-weight: 500;
     font-size: 2rem;
-    line-height: 1.1em;
+    line-height: 1.2em;
     padding-bottom: 1em;
 }
 
@@ -211,7 +212,7 @@ footer p {
 @media screen and (max-width: 740px) {
     .intro-section > h1 {
         font-size: 9vw;
-        line-height: 1.1em;
+        line-height: 1.2em;
         letter-spacing:-.06rem;
 
     }
@@ -222,7 +223,11 @@ footer p {
 
     .intro-section {
         gap: 1rem;
-        padding: 6em 2em;
+        padding: 10em 2em;
+    }
+
+    .largebody {
+        max-width: 27ch;
     }
 
     label {
@@ -231,7 +236,7 @@ footer p {
 
     #cta-scroll {
         right: 1em;
-        bottom: 1em;
+        bottom: 4em;
         background-color: transparent;
     }
 
