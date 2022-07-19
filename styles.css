@@ -177,12 +177,39 @@ label {
     font-family: NDOT55;
 }
 
+h2 {
+    display: flex;
+    gap: 1em;
+    flex-direction: row;
+    padding: 10rem 5rem 2rem;
+    font-family:'InterDisplay-Medium', Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    
+}
 
 .content-container {
     display: flex;
-    padding: 10rem 5rem 50rem;
-    font-family:'InterDisplay-Medium', Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
-    font-size: 2em;
+    gap: 1em;
+    flex-direction: row;
+    padding: 0rem 5rem 5rem;
+}
+
+
+.work-item {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content:end;
+    width: 40em;
+    height: 40em;
+    border-radius: 12px;
+    background-color: var(--secondary-dark);
+    padding: 3em 3em;
+}
+
+.work-title {
+    font-size: 2rem;
 }
 
 
@@ -244,7 +271,7 @@ footer p {
         background-color: var(--secondary-dark);
         font-family: NDOT55;
         right: 1em;
-        bottom: 4em;
+        bottom: 3em;
         background-color: transparent;
     }
 
