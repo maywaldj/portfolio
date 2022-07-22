@@ -106,10 +106,9 @@ nav {
     right: 0;
     bottom: auto;
     padding: 2em 5em;
-    border-bottom: 1px solid var(--light-stroke);
     background-color:#0d1117d2;
-    backdrop-filter: saturate(180%) blur(33px);
-    -webkit-backdrop-filter: saturate(180%) blur(33px);
+    backdrop-filter: saturate(180%) blur(28px);
+    -webkit-backdrop-filter: saturate(180%) blur(28px);
     background-blend-mode: overlay;
     z-index: 100;
 }
@@ -131,7 +130,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap:1rem;
-    padding: 5em;
+    padding: 5em 5em 2em 5em;
 }
 
 .intro-section > h1 {
@@ -145,12 +144,13 @@ nav {
     letter-spacing: -.2rem;
 }
 
+
 .largebody {
     font-family: 'InterDisplay-Medium', Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
-    max-width: 50ch;
+    max-width: 48ch;
     font-weight: 500;
-    font-size: 1.25rem;
-    line-height: 1.25;
+    font-size: 1.5rem;
+    line-height: 1.3;
 }
 
 label {
@@ -177,6 +177,42 @@ label {
     font-family: NDOT55;
 }
 
+#cta {
+    display: flex;
+    flex-direction: row;
+    padding: 2em 5rem 5rem 5rem;
+    gap: 1rem;
+}
+
+.button-primary {
+    all:unset;
+    padding: 1em 2rem;
+    font-family: 'InterDisplay-Regular', Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;    
+    letter-spacing: -0.05rem;
+    border: 1px solid var(--light-stroke);
+    border-radius: 28px;
+    transition: background-color .2s;
+}
+
+.button-secondary {
+    all:unset;
+    padding: 1em 2em;
+    font-family: 'InterDisplay-Regular', Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;    
+    letter-spacing: -0.05rem;
+    border: 1px solid var(--light-stroke);
+    border-radius: 100px;
+    transition: background-color .2s;
+}
+
+.button-secondary:hover, .button-primary:hover {
+    background-color: var(--secondary-dark);
+}
+    
+
 h2 {
     display: flex;
     gap: 1em;
@@ -186,12 +222,14 @@ h2 {
     font-weight: 500;
     font-size: 2em;
     
+    
 }
 
 .content-container {
-    display: flex;
+    display: grid;
     gap: 1em;
-    flex-direction: row;
+    grid-template-columns: 50% 50%;
+    grid-auto-flow: row dense;
     padding: 0rem 5rem 5rem;
 }
 
@@ -201,17 +239,22 @@ h2 {
     flex-direction: column;
     align-items: left;
     justify-content:end;
-    width: 40em;
-    height: 40em;
     border-radius: 12px;
     background-color: var(--secondary-dark);
     padding: 3em 3em;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .work-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
+#spacetalk {
+    background-image: url(./assets/spacetalk.avif);
+    background-position: center;
+    background-size: cover;
+}
 
 footer {
     all:unset;
@@ -245,22 +288,33 @@ footer p {
     }
 
     .content-container {
+        display: flex;
         padding: 10rem 1rem 50rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
     }
 
     .intro-section {
         gap: 1rem;
-        padding: 10em 2em;
+        padding: 2em 2em;
     }
 
     .largebody {
         max-width: 27ch;
+        font-size: 1.25rem;
     }
 
     label {
         font-size: 1rem;
     }
 
+    h2 {
+       
+        padding: 10rem 1em 2rem;
+    }
+    
     #cta-scroll {
         all:unset;
         position: absolute;
@@ -289,10 +343,13 @@ footer p {
         line-height: 1.1em;
     }
 
- .content-container {
-    padding: 10rem 2rem 50rem;
+
+ #cta {
+    padding: 0rem 2rem 8rem 2rem;
     }
 
-
+.button-primary, .button-secondary {
+    padding: .5em 1em;
+}
 
 }
