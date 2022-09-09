@@ -19,9 +19,10 @@
   <meta property="og:image" content="image.png">
   <title>Jordan Maywald</title>
 
-  <link rel="icon" href="/favicon.ico">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
 
   <script>
     setTimeout(() => {
@@ -31,46 +32,149 @@
 </script>
 </head>
 
-
-
 <body>
     <nav>
-        <div class="logo">
-            <p> J </p>
-        </div>
+        
             <div id="menu-container">
-                <div class="menu"> <svg width="32" height="10" viewBox="0 0 32 10" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="1.31134e-07" y1="1.5" x2="32" y2="1.5" stroke="white" stroke-width="3"></line><line x1="-1.31134e-07" y1="8.5" x2="32" y2="8.5" stroke="White" stroke-width="3"></line></svg></div>
-            </div>
+                <div class="logo">
+                    <p> J </p>
+                </div>
     </nav>
 
     <main>
+        <div id="landing">
         <div class="intro-section">
-            <label>HELLO, I'M JORDAN MAYWALD</label>
-            <h1>Product Designer, making the digital world more human.</h1>
-            <p class="largebody"> Experience Design consultant at <a href="http://www.asggroup.com.au" target="_blank">ASG Group</a> — Contract work for <a href="http://ech.asn.au" target="_blank">ECH</a> and <a href="https://www.discoveryholidayparks.com.au/" target="_blank">Discovery Parks</a>. Formerly Design lead at <a href="http://www.spacetalk.com.au" target="_blank">Spacetalk</a></p>
+            <label>Hey, I'm Jordan 👋</label>
+            <h1><Span class="text-gradient">Product designer </Span> making the digital world more human.<img src="./assets/sparkles_2728.png"> </h1>
+            <p class="largebody"> Presently consulting for <a href="http://www.asggroup.com.au" target="_blank">ASG Group</a> as an Experience Design Analyst at <a href="http://ech.asn.au" target="_blank">ECH</a> and Product Design Lead at <a href="https://www.discoveryholidayparks.com.au/" target="_blank">Discovery Parks</a>. Former Global Design Lead at <a href="http://www.spacetalk.com.au" target="_blank">Spacetalk.</a></p>
             </div>
         </header>
-        <div id="cta-scroll">
-            <h3>SCROLL</h3>
-            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" stroke="white"/></svg>
-        </div>
+        
         <div id="cta">
-            <button class="button-primary"> Learn more </button>
-            <button class="button-secondary"> View CV </button>
+            <button class="button-primary" type="button"> About me </button>
+            <button class="button-tertiary" onclick="location.href='./assets/Jordan_Maywald-cv_22.pdf'" type="button"> View CV </button>
         </div>
-    </main>
 
-    <h2> Recent Work</h2>
-    <div class="content-container">
-        <div class="work-item"> <p class="work-title">ECH App</p></div>
-        <div class="work-item"> <p class="work-title">Discovery Parks</p> </div>
-        <div class="work-item"  id="spacetalk"> <p class="work-title">Spacetalk</p> </div>
-        <div class="work-item"> <p class="work-title">Suez</p> </div>
+    <div id="logos">
+        <h3> Brands I've worked with</h3>
+        <div id="logo-container">
+            <div class="brand">
+                <a href="https://www.asggroup.com.au/" target="_blank"><img src="./assets/asg-logo.png" class="logo"></a>
+            </div>
+            
+            <div class="brand">
+                <a href="https://www.education.sa.gov.au/" target="_blank"><img src="./assets/dept-ed-logo.png" class="logo" ></a>
+            </div>
+            <div class="brand">
+                <a href="https://www.discoveryholidayparks.com.au/" target="_blank"><img src="./assets/discovery-logo.png" class="logo"></a>
+            </div>
+            <div class="brand">
+             <a href="https://www.ech.asn.au" target="_blank"><img src="./assets/ech-logo.png" class="logo"></a>
+            </div>
+            <div class="brand">
+                <a href="https://www.spacetalkwatch.com" target="_blank"><img src="./assets/Spacetalk-logo.png" class="logo"></a>
+            </div>
+            <div class="brand">
+                <a href="https://www.suez.com" target="_blank"><img src="./assets/suez-logo.png" class="logo"></a>
+            </div>
+        </div>
+    </div>
+    </main>
+</div>
+
+
+    <div class="content-container">   
+        <h2 class="sectiontitle"> Latest Article</h2>
+        <a class="articlecontainer" href="https://maywaldjordan.medium.com/i-bloody-love-design-conferences-86014c43209" target="_blank"> 
+            <div class="article">
+                <div class="articleimage">
+                    <img src="./assets/conference.jpeg">
+                </div>
+                <div class="articledescription">
+                    <div class="articlelabel">ARTICLE</div>
+                    <p class="articleheading"> Article: My review of UX Australia 2022 and key takeaways.</p> 
+                    <p class="articlebody"> Read More -> </p>
+                </div>
+           </div>
+        </a> 
+        <h2 class="sectiontitle"> Recent Work</h2>
+        <div class="case-study"> 
+            <div class="cs-info">
+                <div class="subtitle">
+                    <h2>ECH inc.</h2>
+                    <p class="subtitletext" style="color: #95a0b0;"> Managing a Home Care Package can be difficult and time consuming. See how my work is helping ECH clients feel more in control of their care.</p>
+                    <div class="cslabels">
+                        <p id="cslabel"> 2021-2022 </p>
+                        <p id="cslabel"> Product Designer </p>
+                    </div>
+                    
+                </div> 
+
+                <img src="./assets/ech-hero.jpg" class="cshero">
+             </div>
+        </div>
+
+        <div class="case-study"> 
+            <div class="cs-info"> 
+                <div class="subtitle">
+                    <h2>Discovery Parks</h2>
+                    <p class="subtitletext" style="color: #95a0b0;"> An opportunity to redesign complex park management systems for casual and transient staff. </p>
+                    <div class="cslabels">
+                        <p id="cslabel"> 2021-2022 </p>
+                        <p id="cslabel"> Product Designer </p>
+                    </div>
+            </div>
+            <img src="./assets/dhp-hero.jpg" class="cshero">
+        </div>
+    </div>
+
+        <div class="case-study"  id="spacetalk"> 
+            <div class="cs-info">
+                <div class="subtitle">
+                    <h2> Spacetalk </h2>
+                    <p class="subtitletext" style="color: #95a0b0;"> Award-winning work on the groundbreaking spacetalk wearbles range. </p>
+                    <div class="cslabels">
+                        <p id="cslabel"> 2017-2020 </p>
+                        <p id="cslabel"> Global Design Lead </p>
+                    </div>
+                    </div>
+                    <img src="./assets/spa-hero.jpg" class="cshero">
+            </div>
+        </div>   
+
+        <div class="case-study"  id="suez"> 
+            <div class="cs-info">
+                <div class="subtitle">
+                    <h2> Suez </h2>
+                    <p class="subtitletext" style="color: #95a0b0;"> An easy to use interface for the next generation of AI powered water network optimisation. </p>
+                    <div class="cslabels">
+                        <p id="cslabel"> 2021-2022 </p>
+                        <p id="cslabel"> UX Designer </p>
+                    </div>
+                    </div>
+                    <img src="./assets/suez-hero.jpg" class="cshero">
+            </div>
+        </div>   
+            <a href="./zoom.html"> 
+                <div class="case-study"> 
+                <div class="cs-info">
+                    <div class="subtitle">
+                        <h2>Solving Zoom Fatigue</h2>
+                            <p class="body20" style="color: #95a0b0;"> An exploration into video-call fatigue and designing a better zoom experience.</p>
+                            <div class="cslabels">
+                                <p id="cslabel"> 2020 </p>
+                                <p id="cslabel"> Case Study </p>
+                            </div>
+        </div> <div class="csimage"> <script src="https://fast.wistia.com/embed/medias/ruz90ngmwr.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_ruz90ngmwr videoFoam=true" style="height:100%;position:relative;width:100%;">&nbsp;</div></div></div>
+    </div></div>
+                 </div>
+                 </a>
     </div>
 </body>
 
 
 <footer>
+    <div class="footercontainer">
     <h1 id="time">Adelaide <br><a href="https://time.is/Adelaide" id="time_is_link" rel="nofollow" style="font-size:36px"></a>
         <span id="Adelaide_z600"></span>
         <script src="//widget.time.is/t.js"></script>
@@ -78,7 +182,14 @@
         time_is_widget.init({Adelaide_z600:{}});
         </script></h1>
     <h1>Work with me <br>hello@jordanmaywald.me</h1>
-    <p> HAND-CODED BY JORDAN, HOSTED ON GITHUB</p>
+    <p> HTML/CSS/JS :: WITH LOVE FROM JORDAN</p>
+</div>
+<div class="footercontainerlinks">
+    <a href="https://www.linkedin.com/in/maywaldj/" target="_blank" class="footerlinks"> LINKEDIN </a>
+    <a href="https://medium.com/@maywaldjordan" target="_blank" class="footerlinks"> MEDIUM </a>
+    <a href="https://www.instagram.com/maywldd/" target="_blank" class="footerlinks"> INSTAGRAM </a>
+
+</div>
 </footer>
 
 </html>
