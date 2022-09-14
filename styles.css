@@ -954,6 +954,18 @@ footer {
             font-size: 1rem;
         }
     
+        #menu-container {
+            display: flex;
+            padding-bottom:8px;
+            flex-direction: row;
+            width: 100vw;
+            margin: auto;
+        }
+
+        nav {
+            padding: 1em 1.5em;
+        }
+        
     }
 
     @media only screen and (max-width: 690px) { 
@@ -1019,6 +1031,15 @@ footer {
         @media only screen and (max-width: 530px) {
             #cslabel {
                 font-size: 14px;
+            }
+
+            #landing {
+                padding: 5em 0em 0em 0em
+            }
+
+            #logo-container {
+               padding: 1rem 0rem 3em 0em;
+               font-size: 16px;
             }
 
             h3 {
