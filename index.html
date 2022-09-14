@@ -36,8 +36,8 @@
     <nav>
         
             <div id="menu-container">
-                <div class="logo">
-                    <p> J </p>
+                <div class="icon">
+                    <a href="./index.html"> <p> J </p> </a>
                 </div>
     </nav>
 
@@ -45,18 +45,22 @@
         <div id="landing">
         <div class="intro-section">
             <label>👋 &nbsp;Hey, I'm Jordan </label>
-            <h1><Span class="text-gradient">Product designer, </Span> developer and digital creative <img src="./assets/sparkles_2728.png"> </h1>
+            <h1><Span class="text-gradient">Product designer,</Span> front-end developer <br> &  digital creative.</h1>
             <p class="largebody"> Currently making the digital world more human at <a href="http://www.asggroup.com.au" target="_blank">ASG Group</a>. Former Global Design Lead at <a href="http://www.spacetalk.com.au" target="_blank">Spacetalk.</a></p>
             </div>
         </header>
         
         <div id="cta">
-            <button class="button-primary" type="button"> About me </button>
-            <button class="button-tertiary" onclick="location.href='./assets/Jordan_Maywald-cv_22.pdf'" type="button"> View CV </button>
+        <!-- Calendly link widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jordanmaywald/30min'});return false;"> <button class="button-primary"> Let's catchup</button></a>
+<!-- Calendly link widget end -->
+<button class="button-secondary"> View CV  </button>
         </div>
 
     <div id="logos">
-        <h3> Brands I've worked with</h3>
+        <title class="logotitle"> Clients I've worked with</title>
         <div id="logo-container">
             <div class="brand">
                 <a href="https://www.asggroup.com.au/" target="_blank"><img src="./assets/asg-logo.png" class="logo"></a>
@@ -84,25 +88,13 @@
 
 
     <div class="content-container">   
-        <h2 class="sectiontitle"> Latest Article</h2>
-        <a class="articlecontainer" href="https://maywaldjordan.medium.com/i-bloody-love-design-conferences-86014c43209" target="_blank"> 
-            <div class="article">
-                <div class="articleimage">
-                    <img src="./assets/conference.jpeg">
-                </div>
-                <div class="articledescription">
-                    <div class="articlelabel">ARTICLE</div>
-                    <p class="articleheading"> Article: My review of UX Australia 2022 and key takeaways.</p> 
-                    <p class="articlebody"> Read More -> </p>
-                </div>
-           </div>
-        </a> 
+        
         <h2 class="sectiontitle"> Recent Work</h2>
         <div class="case-study"> 
             <div class="cs-info">
                 <div class="subtitle">
-                    <h2>ECH inc.</h2>
-                    <p class="subtitletext" style="color: #95a0b0;"> Managing a Home Care Package can be difficult and time consuming. See how my work is helping ECH clients feel more in control of their care.</p>
+                    <h3>ECH inc.</h3>
+                    <p class="subtitletext"> Managing a Home Care Package can be difficult and time consuming. See how my work is helping ECH clients feel more in control of their care.</p>
                     <div class="cslabels">
                         <p id="cslabel"> 2021-2022 </p>
                         <p id="cslabel"> Product Designer </p>
@@ -117,8 +109,8 @@
         <div class="case-study"> 
             <div class="cs-info"> 
                 <div class="subtitle">
-                    <h2>Discovery Parks</h2>
-                    <p class="subtitletext" style="color: #95a0b0;"> An opportunity to redesign complex park management systems for casual and transient staff. </p>
+                    <h3>Discovery Parks</h3>
+                    <p class="subtitletext"> An opportunity to redesign complex park management systems for casual and transient staff. </p>
                     <div class="cslabels">
                         <p id="cslabel"> 2021-2022 </p>
                         <p id="cslabel"> Product Designer </p>
@@ -131,8 +123,8 @@
         <div class="case-study"  id="spacetalk"> 
             <div class="cs-info">
                 <div class="subtitle">
-                    <h2> Spacetalk </h2>
-                    <p class="subtitletext" style="color: #95a0b0;"> Award-winning work on the groundbreaking spacetalk wearbles range. </p>
+                    <h3> Spacetalk </h3>
+                    <p class="subtitletext""> Award-winning work on the groundbreaking spacetalk wearbles range. </p>
                     <div class="cslabels">
                         <p id="cslabel"> 2017-2020 </p>
                         <p id="cslabel"> Global Design Lead </p>
@@ -145,8 +137,8 @@
         <div class="case-study"  id="suez"> 
             <div class="cs-info">
                 <div class="subtitle">
-                    <h2> Suez </h2>
-                    <p class="subtitletext" style="color: #95a0b0;"> An easy to use interface for the next generation of AI powered water network optimisation. </p>
+                    <h3> Suez </h3>
+                    <p class="subtitletext"> An easy to use interface for the next generation of AI powered water network optimisation. </p>
                     <div class="cslabels">
                         <p id="cslabel"> 2021-2022 </p>
                         <p id="cslabel"> UX Designer </p>
@@ -159,8 +151,8 @@
                 <div class="case-study"> 
                 <div class="cs-info">
                     <div class="subtitle">
-                        <h2>Solving Zoom Fatigue</h2>
-                            <p class="body20" style="color: #95a0b0;"> An exploration into video-call fatigue and designing a better zoom experience.</p>
+                        <h3>Solving Zoom Fatigue</h3>
+                            <p class="subtitletext""> An exploration into video-call fatigue and designing a better zoom experience.</p>
                             <div class="cslabels">
                                 <p id="cslabel"> 2020 </p>
                                 <p id="cslabel"> Case Study </p>
@@ -169,19 +161,36 @@
     </div></div>
                  </div>
                  </a>
+
+    
+         <h2 class="sectiontitle"> Latest Article</h2>
+        <a class="articlecontainer" href="https://maywaldjordan.medium.com/i-bloody-love-design-conferences-86014c43209" target="_blank"> 
+            <div class="article">
+                <div class="articleimage">
+                    <img src="./assets/conference.jpeg">
+                </div>
+                <div class="articledescription">
+                    <div class="articlelabel">ARTICLE</div>
+                    <p class="articleheading"> Article: My review of UX Australia 2022 and key takeaways.</p> 
+                    <p class="articlebody"> Read More -> </p>
+                </div>
+           </div>
+        </a> 
+
+
     </div>
 </body>
 
 
 <footer>
     <div class="footercontainer">
-    <h1 id="time">Adelaide <br><a href="https://time.is/Adelaide" id="time_is_link" rel="nofollow" style="font-size:36px"></a>
+    <h1 class="footerheading" id="time">Adelaide <br><a href="https://time.is/Adelaide" id="time_is_link" rel="nofollow" style="font-size:36px"></a>
         <span id="Adelaide_z600"></span>
         <script src="//widget.time.is/t.js"></script>
         <script>
         time_is_widget.init({Adelaide_z600:{}});
         </script></h1>
-    <h1>Work with me <br>hello@jordanmaywald.me</h1>
+    <h1 class="footerheading">hello@jordanmaywald.me</h1>
     <p> HTML/CSS/JS :: WITH LOVE FROM JORDAN</p>
 </div>
 <div class="footercontainerlinks">
