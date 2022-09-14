@@ -183,9 +183,8 @@ nav {
 #cscontainer {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 1em;
-    padding: 6em 0em 6em 0em;
+    padding: 6em 1.5em 6em 1.5em;
     width: 980px;
     margin: auto;
     }
@@ -772,15 +771,7 @@ footer {
 
 @media only screen and (max-width: 1290px) {
    
-    #cscontainer {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        gap: 1em;
-        padding: 6em 1em 0em 1em;
-        width: 100vw;
-        }
-    
+
     .content-container  {
     display: flex;
     flex-direction: column;
@@ -862,6 +853,9 @@ footer {
         margin: auto;
     }
 
+    li {
+        max-width: none;
+    }
     .content-container  {
         display: flex;
         flex-direction: column;
@@ -881,6 +875,14 @@ footer {
         text-align: left;
     }
 
+    #cscontainer {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: 6em 1.5em 6em 1.5em;
+        width: 100%;
+        margin: auto;
+        }
 
 
 }
@@ -930,7 +932,7 @@ footer {
         color: var(--font-primary);
         font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
         font-weight: 700;
-        width: 25ch;
+        max-width: 25ch;
         font-size: 48px;
         letter-spacing: -.1rem;
     }
@@ -965,7 +967,6 @@ footer {
             display: flex;
             padding-bottom:8px;
             flex-direction: row;
-            width: 100vw;
             margin: auto;
         }
 
@@ -973,6 +974,10 @@ footer {
             padding: 1em 1.5em;
         }
         
+        #zoomlabels {
+            font-size: 16px;
+        }
+
     }
 
     @media only screen and (max-width: 690px) { 
@@ -992,7 +997,6 @@ footer {
             color: var(--font-primary);
             font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
             font-weight: 700;
-            width: 25ch;
             font-size: 48px;
             letter-spacing: -.1rem;
         }
@@ -1040,6 +1044,7 @@ footer {
                 font-size: 14px;
             }
 
+            
             #landing {
                 padding: 5em 0em 0em 0em
             }
