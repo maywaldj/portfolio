@@ -434,6 +434,19 @@ label {
     padding: .5em .75em;
 }
 
+.sectionlabel {
+    font-family: 'SF Pro Display', -apple-system, 'Inter', BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    line-height: 1;
+    display: inline-block;
+    color: var(--font-secondary);
+    font-weight: 700;
+    border-radius: 16px;
+    width: fit-content;
+}
+
+
+
 .articlelabel {
     font-family: 'SF Pro Display', -apple-system, 'Inter', BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
     font-size: 1rem;
@@ -545,7 +558,7 @@ h3 {
 }
 
 .sectiontitle {
-padding: 2em 0em .25em 0em;
+padding: 1em 0em .25em 0em;
 color:  var(--font-primary);
 width: fit-content;
 }
@@ -553,9 +566,33 @@ width: fit-content;
 .sectionheading {
     display: flex;
     flex-direction: column;
-    padding-bottom: 1em;
+    gap: 1em;
+    padding: 8em 0em 1em 0em;
 }
 
+.sectionheading2 {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0em 0em 0em;
+}
+
+.asectioncontainer {
+    all:unset;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 6em 0em 0em 0em;
+}
+
+.asectiondesc {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+
+}
 
 .articlecontainer {
     display: grid;
@@ -715,7 +752,7 @@ width: fit-content;
     flex-direction: column;
     width: 1200px;
     margin: auto;
-    padding: 3em 0em 6em 0em;
+    padding: 3em 0em 10em 0em;
     gap: 1.5em;
 }
 
@@ -763,6 +800,7 @@ footer {
 
 }
 
+f
 .footercontainer {
     all:unset;
     display: flex;
@@ -784,22 +822,27 @@ footer {
     text-decoration: underline;
 }
 
+.footeremail {
+    all: unset;
+    text-decoration: underline;
+}
 
 .footerheading {
     all: unset;
     font-family: 'SF Pro Display', -apple-system, 'Inter', BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
     font-weight: 700;
     color: var(--font-primary);
-    font-size: 2rem;
-    line-height: 1.2em;
+    font-size: 48px;
+    line-height: 1.1em;
     padding-bottom: 1em;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em;
 }
 
 .footercontainer p {
     font-family: NDOT55;
     color: var(--font-primary);
     font-size: .8rem;
+    line-height: 1.25;
 }
 
 @media only screen and (max-width: 1290px) {
@@ -855,7 +898,7 @@ footer {
             font-family: 'SF Pro Display', -apple-system, 'Inter', BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
             font-weight: 700;
             color: var(--font-primary);
-            font-size: 32px;
+            font-size: 48px;
             line-height: 1.2em;
             padding-bottom: 1em;
             letter-spacing: -0.03em;
@@ -893,7 +936,7 @@ footer {
         display: flex;
         flex-direction: column;
         margin: auto;
-        padding: 5em 2em 10em 2em;
+        padding: 5em 2em 8em 2em;
         gap: 1em;
         width: 100vw;
         }
@@ -917,6 +960,12 @@ footer {
         margin: auto;
         }
 
+        .sectionheading {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            padding: 1.5em 0em 1em 0em;
+        }
 
 }
 
@@ -944,9 +993,33 @@ footer {
         justify-content: center;
     }
 
+    .asectioncontainer {
+        all:unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2em;
+        padding: 1em 0em 1em 0em;
+    }
+
+    .asectiondesc {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        justify-content: center;
+    }
+
+    .sectionheading2 {
+        display: flex;
+        flex-direction: column;
+        padding: .5em 0em 0em 0em;
+    }
+
     .aboutimg > img{
         height: 600px;
         width: 100vw;
+        object-position: top;
         border-radius: 16px;
         overflow: hidden;
         transition: all 0.2s ease-in-out;
@@ -966,6 +1039,8 @@ footer {
         background-color: #fefefe53;
         padding: .5em .75em;
     }
+
+
 
     .largebody {
         font-family:'SF Pro Display', -apple-system, 'Inter', BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
@@ -1086,7 +1161,7 @@ footer {
         display: flex;
         flex-direction: column;
         margin: auto;
-        padding: 2em 1.5em 10em 1.5em;
+        padding: 2em 1.5em 4em 1.5em;
         gap: 1em;
         width: 100vw;
         }
@@ -1145,7 +1220,7 @@ footer {
                 font-family: 'SF Pro Display', -apple-system, 'Inter', BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
                 font-weight: 700;
                 color: var(--font-primary);
-                font-size: 24px;
+                font-size: 28px;
                 line-height: 1.2em;
                 padding-bottom: 1em;
                 letter-spacing: -0.03em;
