@@ -577,7 +577,6 @@ width: fit-content;
 }
 
 .articlesectioncontainer {
-    all:unset;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
