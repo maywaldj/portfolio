@@ -576,7 +576,7 @@ width: fit-content;
     padding: 2em 0em 0em 0em;
 }
 
-.asectioncontainer {
+.articlesectioncontainer {
     all:unset;
     display: flex;
     flex-direction: row;
@@ -585,7 +585,7 @@ width: fit-content;
     padding: 6em 0em 0em 0em;
 }
 
-.asectiondesc {
+.articlesectiondesc {
     width: 50%;
     display: flex;
     flex-direction: column;
