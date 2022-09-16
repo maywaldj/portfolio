@@ -992,8 +992,7 @@ f
         justify-content: center;
     }
 
-    .asectioncontainer {
-        all:unset;
+    .articlesectioncontainer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -1001,7 +1000,7 @@ f
         padding: 1em 0em 1em 0em;
     }
 
-    .asectiondesc {
+    .articlesectiondesc {
         width: 100%;
         display: flex;
         flex-direction: column;
