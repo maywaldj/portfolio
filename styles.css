@@ -273,7 +273,7 @@ nav {
     letter-spacing: -0.03em;
     text-align: center;
     color: var(--font-primary);
-    max-width: 15ch;
+    max-width: 14ch;
 }
 
 
@@ -1134,11 +1134,12 @@ f
             all:unset;
             font-family: 'SF Pro Display', -apple-system, 'Inter', BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
             font-weight: 700;
-            font-size: 48px;
+            font-size: 64px;
             line-height: 1;
             letter-spacing: -0.03em;
             text-align: left;
             color: var(--font-primary);
+            max-width: 13ch;
         }
 
         h2 {
@@ -1210,6 +1211,18 @@ f
                font-size: 16px;
             }
 
+            h1 {
+                all:unset;
+                font-family: 'SF Pro Display', -apple-system, 'Inter', BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+                font-weight: 700;
+                font-size: 38px;
+                line-height: 1;
+                letter-spacing: -0.03em;
+                text-align: left;
+                color: var(--font-primary);
+                max-width: 13ch;
+            }
+
             h3 {
                 all:unset;
                 color: var(--font-primary);
@@ -1254,7 +1267,6 @@ f
                 overflow: hidden;
                 transition: all 0.2s ease-in-out;
             }
-            
-
-        }
+        
     }
+}
