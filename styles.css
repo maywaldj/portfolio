@@ -1223,6 +1223,7 @@ f
             gap: 2em;
             padding: 5em 0em 1em 0em;
         }
+    }
 
         @media only screen and (max-width: 530px) {
             #cslabel {
@@ -1332,7 +1333,9 @@ f
                 letter-spacing: -.022em;
                 text-align: left;
                 
-            
+            }
+        }
+
         @media only screen and (max-width: 475px) {
           
             h1 {
@@ -1363,8 +1366,4 @@ f
         }
 
 
-}
-
-            }
-        }
     }
