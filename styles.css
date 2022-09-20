@@ -235,14 +235,9 @@ nav {
     font-weight: 700;
 }
 
-.csdetail > .body20 {
-    font-weight: 600;
-}
-
 .csdetail {
     display: flex;
     flex-direction: column;
-    gap: .25em;
 }
 
 .cslabels {
@@ -355,8 +350,8 @@ li {
     font-family: 'SF Pro Display', -apple-system, 'Inter', BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
     font-weight: 600;
     color: var(--font-primary);
-    font-size: 24px;
-    line-height: 1.5;
+    font-size: 20px;
+    line-height: 24px;
     text-align: left;
     
 }
@@ -1250,7 +1245,7 @@ f
 
      .csdetail > .body24 {
         font-weight: 600;
-        line-height: 1;
+        line-height: 24px;
         font-size: 20px;
         letter-spacing: 0em;
         }
