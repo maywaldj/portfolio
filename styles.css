@@ -151,6 +151,7 @@ nav {
     right: 0;
     bottom: auto;
     padding: 1em 5em;
+    width: 100vw;
     background-color:#ffffff00;
     backdrop-filter: blur(28px);
     -webkit-backdrop-filter:  blur(28px);
@@ -318,7 +319,7 @@ ul {
 li {
     font-family: 'SF Pro Display', -apple-system, 'Inter', BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
     color: var(--font-secondary);
-    font-size: 1.25em;
+    font-size: 20px;
     font-weight: 600;
     max-width: 72ch;
     line-height: 1.25;
@@ -350,6 +351,16 @@ li {
     
 }
 
+.body24 {
+    font-family: 'SF Pro Display', -apple-system, 'Inter', BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    color: var(--font-primary);
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: left;
+    
+}
+
 .subtitletext {
     width: 40ch;
     font-family: 'SF Pro Display', -apple-system, 'Inter', BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
@@ -369,24 +380,34 @@ li {
     color: var(--font-secondary);
 }
 
+h4 {
+    font-family: 'SF Pro Display', -apple-system, 'Inter', BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+    color: var(--font-primary);
+    padding-top: .5em;
+}
+
 .quote {
     all: unset;
     font-family: 'SF Pro Display', -apple-system, 'Inter', BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: left;
-    padding: 2em 2em 2em 2em;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    padding: 1em;
     border-radius: 6px;
-    background-color:var(--background);
+    background-color:#e4e4e73c;
 
 }
 
 .callout {
     font-family: 'SF Pro Display', -apple-system, 'Inter', BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 28px;
     text-align: left;
     padding: 1.5em 1.5em 1.5em 1.5em;
     border-radius: 6px;
@@ -396,8 +417,8 @@ li {
 .callout2 {
     font-family: 'SF Pro Display', -apple-system, 'Inter', BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 28px;
     text-align: left;
     padding: 1.5em 1.5em 1.5em 1.5em;
     border-radius: 6px;
@@ -408,6 +429,7 @@ li {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     gap: .75em;
     
 }
@@ -561,14 +583,13 @@ label {
     color: var(--background);
     cursor:pointer;
 }
-    
+
 
 h2 {
     all:unset;
     color: var(--font-primary);
     font-family: 'SF Pro Display', -apple-system, 'Inter', BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
     font-weight: 700;
-    width: 25ch;
     font-size: 64px;
     line-height: 68px;
     letter-spacing: -.1rem;
@@ -989,8 +1010,8 @@ f
     #cscontainer {
         display: flex;
         flex-direction: column;
-        gap: 1em;
-        padding: 6em 1.5em 6em 1.5em;
+        gap: .5em;
+        padding: 4em .5em 2em .5em;
         width: 100%;
         margin: auto;
         }
@@ -1001,7 +1022,15 @@ f
             gap: 1em;
             padding: 1.5em 0em 1em 0em;
         }
-
+        h2 {
+            all:unset;
+            color: var(--font-primary);
+            font-family: 'SF Pro Display', -apple-system, 'Inter', BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+            font-weight: 700;
+            max-width: none;
+            font-size: 48px;
+            letter-spacing: -.1rem;
+        }
 }
 
 
@@ -1108,7 +1137,7 @@ f
         color: var(--font-primary);
         font-family: 'SF Pro Display', -apple-system, 'Inter', BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
         font-weight: 700;
-        max-width: 25ch;
+        max-width: none;
         font-size: 48px;
         letter-spacing: -.1rem;
     }
@@ -1207,7 +1236,24 @@ f
         gap: 1em;
         width: 100vw;
         }
-    
+
+        .csdetails
+        {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: 2em 2em;
+        border-radius: 12px;
+        background-color: var(--secondary-dark);
+        font-weight: 600;
+     }
+
+     .csdetail > .body24 {
+        font-weight: 600;
+        line-height: 1;
+        font-size: 20px;
+        letter-spacing: 0em;
+        }
     
         main {
             display: flex;
@@ -1307,22 +1353,12 @@ f
                 text-align: left;
             }
 
-            .csdetails
-            {
-            display: flex;
-            flex-direction: column;
-            gap: 1em;
-            padding: 2em 2em;
-            border-radius: 12px;
-            background-color: var(--secondary-dark);
-            font-weight: 600;
-         }
-
-             .csdetail > .body20 {
-            font-weight: 600;
-            line-height: 1;
-            letter-spacing: 0em;
+            h4 {
+                font-size: 20px;
+                line-height: 24px;
+                text-align: left;
             }
+
 
             .body20 {
                 font-family: 'SF Pro Text', -apple-system, 'Inter', BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
@@ -1332,8 +1368,29 @@ f
                 line-height: 1.47059;
                 letter-spacing: -.022em;
                 text-align: left;
-                
             }
+
+            .csheader {
+                padding: 1.5em;
+            }
+
+            .csdetails {
+                padding: 1.5em;
+            }
+
+            .csintro {
+                padding: 1.5em;
+            }
+
+            .cssection {
+                padding: 1.5em;
+                gap: 1em;
+            }
+            
+            ul {
+                padding: 0em 1em;
+            }
+                
         }
 
         @media only screen and (max-width: 475px) {
@@ -1365,5 +1422,16 @@ f
             max-width: 13ch;
         }
 
+        .footerheading {
+            all: unset;
+            font-family: 'SF Pro Display', -apple-system, 'Inter', BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+            font-weight: 700;
+            color: var(--font-primary);
+            font-size: 24px;
+            line-height: 1.2em;
+            padding-bottom: 1em;
+            letter-spacing: -0.03em;
+        }
+    
 
     }
