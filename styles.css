@@ -463,6 +463,39 @@ h4 {
     color: var(--font-primary);
     align-items: center;
     margin-bottom: .75em;
+    transition: all 0.2s ease-in-out;
+}
+
+#returnlink:hover {
+    background-color: #e1e1e1;
+}
+
+.returntop {
+    position: fixed;
+    width: fit-content;
+    right: 1em;
+    bottom: 0;
+    gap:.4em;
+    padding: .4em .75em;
+    border-radius: 8px;
+    background-color: var(--background);
+    font-family: 'SF Pro Display', -apple-system, 'Inter', BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+    color: var(--font-primary);
+    align-items: center;
+    margin-bottom: .75em;
+    transition: all 0.2s ease-in-out;
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter:  blur(28px);
+    background-blend-mode: overlay;
+    z-index: 100;
+}
+
+.returntop:hover {
+    background-color: #e1e1e1;
 }
 
 label {
@@ -690,7 +723,7 @@ width: fit-content;
 .logo {
     height: 2em;
     opacity: 50%;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s;
     mix-blend-mode:exclusion;
     display: inline-block;
     align-items: center;
@@ -717,7 +750,7 @@ width: fit-content;
 
 .logo:hover {
     opacity: 100%;
-    transform: scale(1.03)
+    transform: scale(1.1)
 }
 
 .logotitle {
